@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="Get">
 		<div>
 			<lable for="name">Name*</lable>
 			<input required type="text" id="name" name="name" >
@@ -19,12 +19,43 @@
 		</div>
 		<div>
 			<lable required>Gender*</lable>
-			<lable for="male">Male</lable>
-			<input id="male" type="radio" value="M" name="gender">
-			<lable for="female">female</lable>
-			<input id="female" type="radio" value="F" name="gender">
-			<lable for="Others">Others</lable>
-			<input id="Others" type="radio" value="O" name="gender">
+			<lable for="gender_m">Male</lable>
+			<input id="gender_m" type="radio" value="M" name="gender" required>
+			<lable for="gender_f">female</lable>
+			<input id="gender_f" type="radio" value="F" name="gender">
+			
+		</div>
+		<div>
+			<label for="cars">Car Brands*</label>
+			<select  name="cars" id="car" required>
+				<option selected>--Please choose an option--</option>
+				<option>BMW</option>
+				<option>Audi</option>
+				<option>Mercedez</option>
+			</select>
+		</div>
+		<div>
+			<lable for="age">Age*</lable>
+			<input required type="number" id="age" name="age" >
+		</div>
+		<div>
+			<lable for="dob">DOB*</lable>
+			<input required type="date" id="dob" name="dob">
+		</div>
+		<div>
+			<lable for="tel">Phone Number</lable>
+			<input type="tel" id="tel" name="phone">
+		</div>
+		<div>
+			<lable for="password">Password*</lable>
+			<input type="password" id="password" name="pass" required>
+		</div>
+		<div>
+			<lable for="tos">I agree to the TOS.</lable>
+			<input required type="checkbox" id="tos" name="tos">
+		</div>
+		<div>
+			<input type="button" value="submit button">
 		</div>
 	</form>
     <script type="text/javascript" src="./script.js">

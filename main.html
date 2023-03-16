@@ -11,14 +11,14 @@
 	<form method="Get">
 		<div>
 			<lable for="name">Name*</lable>
-			<input required type="text" id="name" name="name" >
+			<input required type="text" id="name" name="name" placeholder="Name">
 		</div>
 		<div>
 			<lable for="email">Email*</lable>
-			<input required type="email" id="email" name="email" >
+			<input required type="email" id="email" name="email" placeholder="Enail">
 		</div>
 		<div>
-			<lable required>Gender*</lable>
+			<lable>Gender*</lable>
 			<lable for="gender_m">Male</lable>
 			<input id="gender_m" type="radio" value="M" name="gender" required>
 			<lable for="gender_f">female</lable>
@@ -28,27 +28,27 @@
 		<div>
 			<label for="cars">Car Brands*</label>
 			<select  name="cars" id="car" required>
-				<option selected>--Please choose an option--</option>
-				<option>BMW</option>
-				<option>Audi</option>
-				<option>Mercedez</option>
+				<option value="" selected disabled>--Please choose an option--</option>
+				<option value="bmw">BMW</option>
+				<option value="audi"  >Audi</option>
+				<option value="mercedez">Mercedez</option>
 			</select>
 		</div>
 		<div>
 			<lable for="age">Age*</lable>
-			<input required type="number" id="age" name="age" >
+			<input required type="number" id="age" name="age" placeholder="Age">
 		</div>
 		<div>
 			<lable for="dob">DOB*</lable>
-			<input required type="date" id="dob" name="dob">
+			<input required type="date" id="dob" name="dob" placeholder="DOB">
 		</div>
 		<div>
 			<lable for="tel">Phone Number</lable>
-			<input type="tel" id="tel" name="phone">
+			<input type="tel" id="tel" name="phone" placeholder="Phone">
 		</div>
 		<div>
 			<lable for="password">Password*</lable>
-			<input type="password" id="password" name="pass" required>
+			<input type="password" id="password" name="pass" required placeholder="Password">
 		</div>
 		<div>
 			<lable for="tos">I agree to the TOS.</lable>
